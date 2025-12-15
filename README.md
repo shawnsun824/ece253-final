@@ -1,11 +1,5 @@
 # Image Enhancement and Shadow Removal Project
-
-This repository contains three image enhancement pipelines:
-- Traditional image processing methods
-- ML-based shadow removal using ShadowFormer
-- Low-light image enhancement using Zero-DCE
-
-Each method can be run independently as described below.
+This project we aim to improve the image quality for further calorie estimation, in this repository we mainly focus on illumination and shadow removal.
 
 ---
 
