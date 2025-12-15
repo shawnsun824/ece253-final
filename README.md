@@ -15,6 +15,11 @@ Each method can be run independently as described below.
 
 This part implements traditional image processing techniques such as gamma correction.
 
+### Requirements
+   ```bash
+   cd ShadowFormer
+   pip install requirements.txt
+   ```
 ### Steps
 
 1. Enter the directory:
