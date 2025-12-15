@@ -31,10 +31,13 @@ ML-based Shadow Removal (ShadowFormer)
 This part evaluates shadow removal performance using a pre-trained ShadowFormer model.
 
 cd ShadowFormer
+
 Prepare your test dataset following the ISTD format, including:
+
 Shadow images
 Shadow masks
 Shadow-free ground truth images
+
 Open test1.py and modify the dataset path:
 parser.add_argument(
     '--input_dir',
@@ -42,12 +45,15 @@ parser.add_argument(
     type=str,
     help='Directory of validation images'
 )
+
 Run the evaluation:
+
 python test1.py
 Optional flags:
 --save_images to save output images
 --cal_metrics to compute PSNR / SSIM / RMSE
-3. Low-light Image Enhancement (Zero-DCE)
+
+## 3. Low-light Image Enhancement (Zero-DCE)
 This part applies Zero-DCE for low-light image enhancement.
 cd Zero-DCE
 cd Zero-DCE_code
@@ -60,5 +66,6 @@ project-team-7/
 ├── data/
 ├── results/
 └── README.md
-Acknowledgements
+## Acknowledgements
+
 This project uses open-source implementations of ShadowFormer and Zero-DCE for research and educational purposes.
