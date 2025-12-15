@@ -13,7 +13,7 @@ Each method can be run independently as described below.
 
 This part implements traditional image processing techniques (e.g., gamma correction).
 
-### Steps
+ Steps
 ```bash
 cd traditional
 
@@ -26,6 +26,7 @@ python hello.py
 The processed image will be displayed and/or saved according to the script settings.
 
 ## 2. Traditional Methods
+
 ML-based Shadow Removal (ShadowFormer)
 This part evaluates shadow removal performance using a pre-trained ShadowFormer model.
 
