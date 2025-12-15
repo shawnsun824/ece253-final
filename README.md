@@ -22,15 +22,18 @@ Open hello.py and modify the image path:
 image_bgr = cv2.imread("02.jpeg", cv2.IMREAD_COLOR)
 Run the script:
 python hello.py
+
 The processed image will be displayed and/or saved according to the script settings.
-2. ML-based Shadow Removal (ShadowFormer)
+
+## 2. Traditional Methods
+ML-based Shadow Removal (ShadowFormer)
 This part evaluates shadow removal performance using a pre-trained ShadowFormer model.
-Steps
+
 cd ShadowFormer
 Prepare your test dataset following the ISTD format, including:
-shadow images
-shadow masks
-shadow-free ground truth images
+Shadow images
+Shadow masks
+Shadow-free ground truth images
 Open test1.py and modify the dataset path:
 parser.add_argument(
     '--input_dir',
@@ -45,17 +48,10 @@ Optional flags:
 --cal_metrics to compute PSNR / SSIM / RMSE
 3. Low-light Image Enhancement (Zero-DCE)
 This part applies Zero-DCE for low-light image enhancement.
-Steps
 cd Zero-DCE
 cd Zero-DCE_code
-Run the testing script:
 python lowlight_test.py
-The enhanced images will be generated using the default Zero-DCE configuration.
-Notes
-All scripts are tested under a Linux environment.
-Please ensure required Python packages and dependencies are installed before running the code.
-Paths in scripts may need to be adjusted based on your local directory structure.
-Project Structure (Simplified)
+Structure:
 project-team-7/
 ├── traditional/
 ├── ShadowFormer/
