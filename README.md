@@ -14,7 +14,7 @@ Each method can be run independently as described below.
 This part implements traditional image processing techniques (e.g., gamma correction).
 
  Steps
-```bash
+
 cd traditional
 
 Add your own test image to the traditional directory.
